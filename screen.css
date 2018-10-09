@@ -27,18 +27,37 @@ p{
   text-indent: 2em;
   padding-bottom: 0.611em; // 1/2 of our default 1.222em
 }
-/*
-h1 + p,
-h2 + p
-h3 + p{
-  text-indent: 0;
-}
-*/
 
+
+body{
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: url('images/galvin-library.jpg');
+  height: 15em;
+}
+
+h1{
+  padding-top: 3em;
+  font-family: "Helvetica", sans-serif;
+  font-size: 3.375em; /* target / context = 18px / 16px = 1.125 em */
+  line-height: 1.222em; /* 1.22em instead of 120%... from 22px (rounded up)*/
+  padding-left: 0.611em;
+  padding-right: 0.611em;
+  padding-bottom: 0.611em;
+  color: white;
+}
 /*
   Responsive image design
 */
-
+img{
+  display: block;
+  margin-left: none;
+  margin-right: none;
+  max-width: 100%;
+}
 
 /*
   Layout Styles (usually ID selector)
