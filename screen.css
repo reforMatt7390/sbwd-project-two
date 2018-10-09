@@ -38,25 +38,46 @@ body{
   height: 15em;
 }
 
+/* default stuff... like for normal screen sizes */
+/*ModularScale.com "golden section" 1:1.618*/
 h1{
-  padding-top: 3em;
+  padding-top: 4.236em;
   font-family: "Helvetica", sans-serif;
-  font-size: 2.53125em; /* target / context = 18px / 16px = 1.125 em */
-  line-height: 1.222em; /* 1.22em instead of 120%... from 22px (rounded up)*/
-  padding-left: 0.611em;
-  padding-right: 0.611em;
-  padding-bottom: 0.611em;
+  font-size: 2.618em;
+  line-height: 1em;
+  padding-left: 0.618em;
+  padding-right: 0.618em;
   color: white;
 }
-
 h2{
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
-  font-size: 1.6875em;
-  padding-left: 0.611em;
-  padding-right: 0.611em;
-  padding-bottom: 0.611em;
+  font-size: 1.618em;
+  padding-top: 0.618em;
+  padding-left: 0.618em;  /* Why isn't this alighned with h1? */
+  padding-right: 0.618em;
   color: white;
+}
+/* if the browser window is 600px or smaller...*/
+@media only screen and (max-width: 600px) {
+  h1{
+    padding-top: 2.618em;
+    font-family: "Helvetica", sans-serif; /* redundant? */
+    font-size: 2.118em;
+    line-height: 1em;
+    padding-left: 0.056em;
+    padding-right: 0.056em;
+    color: white; /* redundant? */
+  }
+  h2{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    padding-top: 0.056em;
+    padding-left: 0.056em;  /* Why isn't this alighned with h1? */
+    padding-right: 0.056em;
+    color: white;
+  }
 }
 
 /*
