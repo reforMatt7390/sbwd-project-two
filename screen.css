@@ -25,21 +25,20 @@ h1,h2,h3,h4,h5{
 
 p{
   text-indent: 2em;
-  padding-bottom: 0.611em; // 1/2 of our default 1.222em
+  padding-bottom: 0.611em;
 }
 
-
+/*ModularScale.com "golden section" 1:1.618*/
 body{
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('images/galvin-library.jpg');
-  height: 15em;
+  height: 17.942em;
 }
 
 /* default stuff... like for normal screen sizes */
-/*ModularScale.com "golden section" 1:1.618*/
 h1{
   padding-top: 4.236em;
   font-family: "Helvetica", sans-serif;
@@ -58,10 +57,13 @@ h2{
   padding-right: 0.618em;
   color: white;
 }
+nav{
+  display: flex;
+}
 /* if the browser window is 600px or smaller...*/
 @media only screen and (max-width: 600px) {
   h1{
-    padding-top: 2.618em;
+    padding-top: 4.236em;
     font-family: "Helvetica", sans-serif; /* redundant? */
     font-size: 2.118em;
     line-height: 1em;
@@ -77,6 +79,15 @@ h2{
     padding-left: 0.056em;  /* Why isn't this alighned with h1? */
     padding-right: 0.056em;
     color: white;
+  }
+  h3{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    padding-top: 1.618em;
+    padding-left: 0.056em;  /* Why isn't this alighned with h1? */
+    padding-right: 0.056em;
+    color: black;
   }
 }
 
