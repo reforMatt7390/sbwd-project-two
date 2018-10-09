@@ -25,7 +25,6 @@ h1,h2,h3,h4,h5{
 }
 
 p{
-  text-indent: 2em;
   padding-top: 1.618em;
 }
 
@@ -92,14 +91,25 @@ nav{
     padding-top: 0.618em;
     color: black;
   }
-  h3{
+  h3,h4{
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 1em;
-    padding-top: 1.618em;
     padding-left: 0.056em;  /* Why isn't this alighned with h1? */
     padding-right: 0.056em;
-    text-align: center;
     color: black;
+  }
+  h3{
+    padding-top: 1.618em;
+    text-align: center;
+  }
+  h4{
+    padding-top: 1em;
+    font-family: "Helvetica", sans-serif;
+    font-size: 2.118em;
+    line-height: 1em;
+  }
+  ul{
+    padding-top: 1em;
   }
 }
 
