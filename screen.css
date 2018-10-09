@@ -13,6 +13,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 Base styles
 */
 html{
+  font-family: "Helvetica", sans-serif;
   font-size: 1.125em; /* target / context = 18px / 16px = 1.125 em */
   line-height: 1.222em; /* 1.22em instead of 120%... from 22px (rounded up)*/
   padding-left: 1.222em;
@@ -25,7 +26,7 @@ h1,h2,h3,h4,h5{
 
 p{
   text-indent: 2em;
-  padding-bottom: 0.611em;
+  padding-top: 1.618em;
 }
 
 /*ModularScale.com "golden section" 1:1.618*/
@@ -41,7 +42,6 @@ body{
 /* default stuff... like for normal screen sizes */
 h1{
   padding-top: 4.236em;
-  font-family: "Helvetica", sans-serif;
   font-size: 2.618em;
   line-height: 1em;
   padding-left: 0.618em;
@@ -60,18 +60,23 @@ h2{
 nav{
   display: flex;
 }
+
+
+
+
+
 /* if the browser window is 600px or smaller...*/
 @media only screen and (max-width: 600px) {
   h1{
-    padding-top: 4.236em;
-    font-family: "Helvetica", sans-serif; /* redundant? */
+    padding-top: 3.8315em; /* 75% between 4.236 and 2.618em */
     font-size: 2.118em;
     line-height: 1em;
     padding-left: 0.056em;
     padding-right: 0.056em;
     color: white; /* redundant? */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
-  h2{
+  h2,nav{
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     font-size: 1em;
@@ -80,13 +85,20 @@ nav{
     padding-right: 0.056em;
     color: white;
   }
+  h2{
+    color: black;
+  }
+  nav{
+    padding-top: 0.618em;
+    color: black;
+  }
   h3{
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: 300;
     font-size: 1em;
     padding-top: 1.618em;
     padding-left: 0.056em;  /* Why isn't this alighned with h1? */
     padding-right: 0.056em;
+    text-align: center;
     color: black;
   }
 }
@@ -109,7 +121,13 @@ img{
 /*
   Module Styles (usually class selectors)
 */
-
+.container{
+  display: flex;
+  width: 100%;
+}
+.container > li{
+  flex: 1;
+}
 
 /*
   State Styles (media queries and javascript dependent stuff
