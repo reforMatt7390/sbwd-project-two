@@ -108,23 +108,26 @@ img{
 /*
   Layout Styles (usually ID selector)
 */
-#tagline{}
+#tagline{
+}
 #who{
+
+}
+#why{
   color: white;   /*text color*/
-  background-size: 250%;
   background-image: url('images/connectwork.png');
   background-position: center;
+  background-repeat: repeat;
   opacity: 0.75;
+  background-color: #76777B;
 }
-#why{}
 #how{
-  color: white;
-  background-size: 250%;
-  background-image: url('images/connectwork.png');
-  background-position: center;
-  opacity: 0.75;
+
 }
-#contact{}
+#contact{
+  color: #76777B;   /*text color*/
+  background-color: black;
+}
 #footer{}
 
 /*
