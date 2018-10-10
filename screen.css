@@ -21,19 +21,7 @@ html{
   font-family: "Helvetica", sans-serif;
   font-size: 1.125em; /* target / context = 18px / 16px = 1.125 em */
   line-height: 1.222em; /* 1.22em instead of 120%... from 22px (rounded up)*/
-  padding-left: 1.222em;
-  padding-right: 1.222em;
 }
-
-h1,h2,h3,h4,h5{
-  font-weight: bold;
-}
-
-p{
-  padding-top: 0.809em; /* 1.618/2 = 0.809 */
-  padding-bottom: 0.809em;
-}
-
 /*ModularScale.com "golden section" 1:1.618*/
 body{
   position: relative;
@@ -44,70 +32,106 @@ body{
   height: 17.942em;
 }
 
-/* default stuff... like for normal screen sizes */
+h1,h2,h3,h4,p,section,nav,ul{
+  padding-left: 1.222em;
+  padding-right: 1.222em;
+}
+h1,h2,h3,h4,h5,nav{
+  font-weight: bold;
+}
+p{
+  padding-top: 0.809em; /* 1.618/2 = 0.809 */
+  padding-bottom: 0.809em;
+}
 h1{
-  padding-top: 4.236em;   /* 4.236/2 = 2.118 */
-  font-size: 2.618em;
-  line-height: 1em;
+  padding-top: 3.8315em; /* 75% between 4.236 and 2.618em */
   padding-left: 0.618em;
   padding-right: 0.618em;
+  font-size: 2.118em;
+  line-height: 1em;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 h2,nav{
+  font-weight: 300;
+  font-size: 1em;
+  padding-top: 0.056em;
+}
+
+h3,h4{
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+h3{
+  font-size: 1em;
+  padding-top: 1.618em;
+  padding-bottom: 1.618em;
+  text-align: center;
   color: black;
 }
-h2{
-  font-weight: 300;
-  font-size: 1.618em;
-  padding-top: 0.618em;
-  padding-left: 0.618em;  /* Why isn't this alighned with h1? */
+h4{
+  padding-top: 0.5em;   /* 1em/2 = 0.5em */
+  padding-left: 0.618em;
   padding-right: 0.618em;
-}
-nav{
-  padding-top: 0.618em;
-  font-size: 1.618em;
+  font-family: "Helvetica", sans-serif;
+  font-size: 2.118em;
+  line-height: 1em;
+  color: #CC0000;
 }
 h5{
   color: #FF9900;
 }
+
 nav{
   display: flex;
 }
-
-
-
-
+li{
+  padding-bottom: 1em;
+}
+/* Resize the section figures */
+figure{
+  padding-top: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 4.236em;
+}
+/*-------------------------------------------------------------------------------------------------*/
 
 /* if the browser window is 600px or smaller...*/
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
+  /* default stuff... like for normal screen sizes */
   h1{
-    padding-top: 3.8315em; /* 75% between 4.236 and 2.618em */
-    font-size: 2.118em;
-    line-height: 1em;
-    padding-left: 0.056em;
-    padding-right: 0.056em;
-    color: white; /* redundant? */
+    padding-top: 4.236em;   /* 4.236/2 = 2.118 */
+    font-size: 2.618em;
   }
   h2,nav{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: black;
+  }
+  h2{
     font-weight: 300;
-    font-size: 1em;
-    padding-top: 0.056em;
-    padding-left: 0.056em;  /* Why isn't this alighned with h1? */
-    padding-right: 0.056em;
+    font-size: 1.618em;
+    padding-top: 0.618em;
+    padding-left: 0.618em;  /* How can I align this with h1? */
+    padding-right: 0.618em;
+  }
+  nav{
+    padding-top: 0.618em;
+    font-size: 1.618em;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
 
   h3,h4{
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 1em;
-    padding-left: 0.056em;  /* Why isn't this alighned with h1? */
-    padding-right: 0.056em;
+    padding-left: 0.618em;  /* Why isn't this alighned with h1? */
+    padding-right: 0.618em;
     color: black;
   }
   h3{
-    padding-top: 0.809em;   /* 1.618/2 = 0.809*/
-    padding-bottom: 0.809em;
+    padding-top: 2.618em;   /* 1.618/2 = 0.809*/
+    padding-bottom: 2.618em;
     text-align: center;
   }
   h4{
@@ -117,17 +141,12 @@ nav{
     line-height: 1em;
     color: #CC0000;
   }
-  li{
-    padding-top: 1em;
-  }
-  figure{
-    padding-top: 1em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 4.236em;
- }
+
+
+
 }
+
+
 
 /*
   Responsive image design
