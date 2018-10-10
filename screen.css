@@ -101,6 +101,7 @@ nav{
     font-family: "Helvetica", sans-serif;
     font-size: 2.118em;
     line-height: 1em;
+    color: #F4AE00;
   }
   li{
     padding-top: 1em;
@@ -127,7 +128,20 @@ img{
 /*
   Layout Styles (usually ID selector)
 */
-
+#tagline{}
+#who{
+  /* How do I get rid of the white border? */
+  background-color: #CC0000;
+  color: white;
+}
+#why{}
+#how{
+  /* How do I get rid of the white border? */
+  background-color: #CC0000;
+  color: white;
+}
+#contact{}
+#footer{}
 
 /*
   Module Styles (usually class selectors)
