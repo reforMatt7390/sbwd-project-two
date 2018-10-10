@@ -15,7 +15,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles below */
 
 /*
-Base styles
+Base styles (also the styles for smartphones, portrait... need to implement landscape!
 */
 html{
   font-family: "Helvetica", sans-serif;
@@ -95,59 +95,6 @@ figure{
   margin-right: auto;
   max-width: 4.236em;
 }
-/*-------------------------------------------------------------------------------------------------*/
-
-/* if the browser window is 600px or smaller...*/
-@media only screen and (min-width: 600px) {
-  /* default stuff... like for normal screen sizes */
-  h1{
-    padding-top: 4.236em;   /* 4.236/2 = 2.118 */
-    font-size: 2.618em;
-  }
-  h2,nav{
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    color: black;
-  }
-  h2{
-    font-weight: 300;
-    font-size: 1.618em;
-    padding-top: 0.618em;
-    padding-left: 0.618em;  /* How can I align this with h1? */
-    padding-right: 0.618em;
-  }
-  nav{
-    padding-top: 0.618em;
-    font-size: 1.618em;
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  }
-
-  h3,h4{
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 1em;
-    padding-left: 0.618em;  /* Why isn't this alighned with h1? */
-    padding-right: 0.618em;
-    color: black;
-  }
-  h3{
-    padding-top: 2.618em;   /* 1.618/2 = 0.809*/
-    padding-bottom: 2.618em;
-    text-align: center;
-  }
-  h4{
-    padding-top: 0.5em;   /* 1em/2 = 0.5em */
-    font-family: "Helvetica", sans-serif;
-    font-size: 2.118em;
-    line-height: 1em;
-    color: #CC0000;
-  }
-
-
-
-}
-
-
-
 /*
   Responsive image design
 */
@@ -163,7 +110,6 @@ img{
 */
 #tagline{}
 #who{
-  /* How do I get rid of the white border on sides? */
   color: white;   /*text color*/
   background-size: 250%;
   background-image: url('images/connectwork.png');
@@ -172,8 +118,6 @@ img{
 }
 #why{}
 #how{
-  /* How do I get rid of the white border on sides? */
-  /* Why is this pattern smaller than the one from #who? */
   color: white;
   background-size: 250%;
   background-image: url('images/connectwork.png');
@@ -197,3 +141,98 @@ img{
 /*
   State Styles (media queries and javascript dependent stuff
 */
+
+/*------------------------------------------------------------------------------------------------*/
+/* Tablets...*/
+@media screen and (min-width: 768px) {
+}
+/*------------------------------------------------------------------------------------------------*/
+/* Desktops and Laptops...*/
+@media screen and (min-width: 1224px) {
+  /* default stuff... like for normal screen sizes */
+        html{
+          line-height: 1.618em;
+        }
+        h1{
+          padding-top: 3.427em;   /* half-way between 4.236 and 2.118 */
+          font-size: 4.236em;
+        }
+        h2,nav{
+          font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+          color: black;
+        }
+        h2{
+          font-weight: 300;
+          font-size: 1.618em;
+          padding-top: 0.618em;
+          padding-left: 1.618em;  /* How can I align this with h1? */
+          padding-right: 1.618em;
+        }
+        nav{
+          padding-top: 0.618em;
+          font-size: 1.618em;
+          color: white;
+          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+        h3,h4{
+          font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+          padding-left: 0.618em;  /* Why isn't this alighned with h1? */
+          padding-right: 0.618em;
+          color: black;
+        }
+        h3{
+          padding-top: 2.618em;   /* 1.618/2 = 0.809*/
+          padding-bottom: 2.618em;
+          text-align: center;
+          font-size: 1.618em;
+          line-height: 1em;
+        }
+        h4{
+          padding-top: 0.5em;   /* 1em/2 = 0.5em */
+          font-family: "Helvetica", sans-serif;
+          font-size: 4.236em;
+          line-height: 1em;
+          color: #CC0000;
+        }
+        h5{
+          font-size: 1.618em;
+          line-height: 1.618em;
+        }
+        p,section,ul{
+          padding-left: 2.618em;
+          padding-right: 2.618em;
+        }
+        /*
+          Responsive image design
+        */
+        img{
+          display: block;
+          margin-left: none;
+          margin-right: none;
+          max-width: 100%;
+        }
+
+        /*
+          Layout Styles (usually ID selector)
+        */
+        #tagline{}
+        #who{
+          background-size: 100%;
+        }
+        #why{}
+        #how{
+          background-size: 100%;
+        }
+        #contact{}
+        #footer{}
+
+        /*
+          Module Styles (usually class selectors)
+        */
+
+
+        /*
+          State Styles (media queries and javascript dependent stuff
+        */
+}
