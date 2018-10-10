@@ -1,3 +1,8 @@
+/*IIT Colors
+  Red = #CC0000
+  Grey = #76777B
+  Yellow = #FF9900*/
+
 /* RESET CSS */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -56,6 +61,9 @@ h2{
   padding-right: 0.618em;
   color: white;
 }
+h5{
+  color: #FF9900;
+}
 nav{
   display: flex;
 }
@@ -101,7 +109,7 @@ nav{
     font-family: "Helvetica", sans-serif;
     font-size: 2.118em;
     line-height: 1em;
-    color: #F4AE00;
+    color: #CC0000;
   }
   li{
     padding-top: 1em;
@@ -130,15 +138,22 @@ img{
 */
 #tagline{}
 #who{
-  /* How do I get rid of the white border? */
-  background-color: #CC0000;
-  color: white;
+  /* How do I get rid of the white border on sides? */
+  color: white;   /*text color*/
+  background-size: 250%;
+  background-image: url('images/connectwork.png');
+  background-position: center;
+  opacity: 0.75;
 }
 #why{}
 #how{
-  /* How do I get rid of the white border? */
-  background-color: #CC0000;
+  /* How do I get rid of the white border on sides? */
+  /* Why is this pattern smaller than the one from #who? */
   color: white;
+  background-size: 250%;
+  background-image: url('images/connectwork.png');
+  background-position: center;
+  opacity: 0.75;
 }
 #contact{}
 #footer{}
