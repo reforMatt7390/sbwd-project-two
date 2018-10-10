@@ -30,7 +30,8 @@ h1,h2,h3,h4,h5{
 }
 
 p{
-  padding-top: 1.618em;
+  padding-top: 0.809em; /* 1.618/2 = 0.809 */
+  padding-bottom: 0.809em;
 }
 
 /*ModularScale.com "golden section" 1:1.618*/
@@ -45,21 +46,28 @@ body{
 
 /* default stuff... like for normal screen sizes */
 h1{
-  padding-top: 4.236em;
+  padding-top: 4.236em;   /* 4.236/2 = 2.118 */
   font-size: 2.618em;
   line-height: 1em;
   padding-left: 0.618em;
   padding-right: 0.618em;
   color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+h2,nav{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: black;
 }
 h2{
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   font-size: 1.618em;
   padding-top: 0.618em;
   padding-left: 0.618em;  /* Why isn't this alighned with h1? */
   padding-right: 0.618em;
-  color: white;
+}
+nav{
+  padding-top: 0.618em;
+  font-size: 1.618em;
 }
 h5{
   color: #FF9900;
@@ -81,16 +89,13 @@ nav{
     padding-left: 0.056em;
     padding-right: 0.056em;
     color: white; /* redundant? */
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
   h2,nav{
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     font-size: 1em;
     padding-top: 0.056em;
     padding-left: 0.056em;  /* Why isn't this alighned with h1? */
     padding-right: 0.056em;
-    color: black;
   }
 
   h3,h4{
@@ -101,11 +106,12 @@ nav{
     color: black;
   }
   h3{
-    padding-top: 1.618em;
+    padding-top: 0.809em;   /* 1.618/2 = 0.809*/
+    padding-bottom: 0.809em;
     text-align: center;
   }
   h4{
-    padding-top: 1em;
+    padding-top: 0.5em;   /* 1em/2 = 0.5em */
     font-family: "Helvetica", sans-serif;
     font-size: 2.118em;
     line-height: 1em;
