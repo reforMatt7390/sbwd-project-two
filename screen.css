@@ -64,6 +64,7 @@ h2,nav{
 nav{
   font-weight: bold;
   display: flex;
+  text-align: center;
 }
 
 h3,h4{
