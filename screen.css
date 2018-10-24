@@ -32,8 +32,9 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('images/galvin-library-60.jpg');
+  background-image: url('images/galvin-library-50.jpg');
   height: 17.942em;
+  color: #131415;
 }
 
 h1,h2,h3,h4,h5,p,nav,ul{
@@ -149,7 +150,7 @@ img{
   flex: 1;
 }
 .odd-article{
-  color: white;   /*text color*/
+  color: #f1f1f1;   /*text color, slightly grey*/
   background-image: url('images/connectwork-40.png');
   background-position: center;
   background-repeat: repeat;
