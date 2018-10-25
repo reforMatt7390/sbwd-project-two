@@ -1,7 +1,12 @@
 /*IIT Colors
   Red = #CC0000
   Grey = #76777B
-  Yellow = #FF9900*/
+  Yellow = #FF9900
+
+Social responsibility:  MSV
+leadership:  GL
+Integrity:  MTCC
+  */
 
 /* RESET CSS */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -36,7 +41,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('images/galvin-library-50.jpg');
-  height: 17.942em;
+  height: 18em; /* Why doesn't 17.942em work, as recommended by Modular Design?*/
   color: #131415;
 }
 /*
@@ -173,7 +178,7 @@ img{
   border-bottom: solid #4B4C4E;
 }
 .even-article{
-  background-color: #d5d6d7;
+  background-color: #e3e3e4;
 }
 
 /*
@@ -195,6 +200,13 @@ img{
     padding-bottom: 2.618em;
   }
 }
+
+
+
+
+
+
+
 @media screen and (min-width: 600px) {
   h1{
     font-size:  3.375em;
@@ -204,7 +216,83 @@ img{
     padding-top: 1em;
     padding-left: 2.118em;  /* halfway between 1.618 and 2.618 */
   }
+  /*
+    Layout Styles (usually ID selector)
+  */
+#why{           /* CONTAINER */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header"
+    "r2c1 r2c2 r2c2"
+    "r3c1 r3c1 r3c2"
+    "r4c1 r4c2 r4c2"
 }
+#why-introduction{
+  grid-area: header;
+}
+#social-responsibility{
+  grid-area: r2c2;
+}
+#optional-imagery-for-social-resp{
+  grid-area: r2c1;
+  align-self: stretch;
+  background-image: url('images/msv-exterior-ethan-castro.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#optional-imagery-for-leadership{
+  grid-area: r3c2;
+  align-self: stretch;
+  background-image: url('images/excelon-green-line.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#optional-imagery-for-integrity{
+  grid-area: r4c1;
+  align-self: stretch;
+  background-image: url('images/mtcc-exterior-west.jpg');
+  background-size: cover;
+  background-position: right;
+}
+/*img{
+  display:block;
+  height:auto;
+  min-height:100%;
+  left:50%;
+  position:absolute;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:auto;
+  min-width:100%;
+}*/
+#leadership{
+  grid-area: r3c1;
+}
+#integrity{
+  grid-area: r4c2;
+}
+
+  #social-responsibility > figure{
+    /* Resize the section figures */
+    /*padding-top: 1em;
+    display: block;
+    margin-left: 1em;
+    margin-right: auto;
+    max-width: 4.236em;
+    align-items: center;*/
+  }
+
+}
+
+
+
+
+
+
+
+
 @media screen and (min-width: 704px) {
   h1{
     font-size:  3.375em;
