@@ -26,21 +26,21 @@ a:link,a:visited{
 /*
 Base styles (also the styles for smartphones, portrait... need to implement landscape!
 */
-html{
-  font-family: "Helvetica", sans-serif;
+html {
+  font-family: Helvetica, sans-serif;
   font-size: 1.125em; /* target / context = 18px / 16px = 1.125 em */
   line-height: 1.222em; /* 1.22em instead of 120%... from 22px (rounded up)*/
 }
 /*ModularScale.com "golden section" 1:1.618*/
-b{
+b {
   display: block;
 }
-body{
+body {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('images/galvin-library-50.jpg');
+  background-image: url("images/galvin-library-50.jpg");
   height: 18em; /* Why doesn't 17.942em work, as recommended by Modular Design?*/
   color: #131415;
 }
@@ -50,45 +50,45 @@ figcaption{
   font-size: 0;
 }
 */
-h1,h2,h3,h4,h5,p,nav,ul{
+h1, h2, h3, h4, h5, p, nav, ul {
   padding-left: 1.222em;
   padding-right: 1.222em;
 }
-h1,h2,h3,h4,h5,nav{
+h1, h2, h3, h4, h5, nav {
   font-weight: bold;
 }
-p{
+p {
   padding-top: 0.809em; /* 1.618/2 = 0.809 */
   padding-bottom: 0.809em;
 }
-h1,h4{
+h1, h4 {
   color: #CC0000;
   text-shadow: 2px 2px 5px black;
 }
-h1{
+h1 {
   padding-top: 3.8315em; /* 75% between 4.236 and 2.618em */
   padding-left: 0.618em;
   padding-right: 0.618em;
   font-size: 2.118em;
   line-height: 1em;
 }
-h2,nav{
+h2, nav {
   font-weight: 300;
   font-size: 1em;
   padding-top: 0.056em;
 }
-h2{
+h2 {
   font-style: italic;
 }
-nav{
+nav {
   font-weight: bold;
   display: flex;
   text-align: center;
 }
-h3,h4{
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+h3, h4 {
+  font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-h3{
+h3 {
   font-size: 1em;
   font-style: italic;
   padding-top: 1.618em;
@@ -96,33 +96,34 @@ h3{
   text-align: center;
   color: #DBDBDD;
 }
-h4{
+h4 {
   padding-top: 0.5em;   /* 1em/2 = 0.5em */
   padding-left: 0.618em;
   padding-right: 0.618em;
-  font-family: "Helvetica", sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 2.118em;
   line-height: 1em;
 }
-h5{
+h5 {
   color: #FF9900;
   padding-left: 23.608%;
   padding-top: 9%;
   font-size: 150%;
+  line-height: 1em;
 }
-nav ul li a{
+nav ul li a {
   color: #3C3D3E;
   font-weight: bold;
 }
-ul li a{
+ul li a {
   color: #CC0000;
   font-weight: bold;
 }
-li{
+li {
   padding-bottom: 1em;
 }
 /* Resize the section figures */
-figure{
+figure {
   padding-top: 1em;
   display: block;
   margin-left: auto;
@@ -132,7 +133,7 @@ figure{
 /*
   Responsive image design
 */
-img{
+img {
   display: block;
   margin-left: none;
   margin-right: none;
@@ -142,55 +143,44 @@ img{
 /*
   Layout Styles (usually ID selector)
 */
-#tagline{
-}
-#who{
-}
-#why{
-}
-#subheading-leadership{
-  background-image: url('images/lightbulb.png');
+#subheading-leadership {
+  background-image: url("images/lightbulb.png");
   background-position: 1.618em bottom;
   background-size: 11%;
   background-repeat: no-repeat;
 }
-#subheading-integrity{
-  background-image: url('images/shield.png');
+#subheading-integrity {
+  background-image: url("images/shield.png");
   background-position: 1.618em;
   background-size: 10%;
   background-repeat: no-repeat;
 }
-#subheading-social-resp{
-  background-image: url('images/heart.png');
+#subheading-social-resp {
+  background-image: url("images/heart.png");
   background-position: 1.618em bottom;
   background-size: 13%;
   background-repeat: no-repeat;
 }
-#how{
-}
-#contact{
-}
-#footer{}
 
 /*
   Module Styles (usually class selectors)
 */
-.nav{
+.nav {
   display: flex;
   width: 100%;
 }
-.nav > li{
+.nav > li {
   flex: 1;
 }
-.odd-article{
+.odd-article {
   color: #f1f1f1;   /*text color, slightly grey*/
-  background-image: url('images/connectwork-40.png');
+  background-image: url("images/connectwork-40.png");
   background-position: center;
   background-repeat: repeat;
   border-top: solid #4B4C4E;
   border-bottom: solid #4B4C4E;
 }
-.even-article{
+.even-article {
   background-color: #e3e3e4;
 }
 
@@ -203,59 +193,59 @@ img{
 
 /*------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 442px) {
-  h2{
+  h2 {
     padding-top: 1.5em;
   }
-  h5{
+  h5 {
     padding-left: 19.0995%;
   }
 }
 
 @media screen and (min-width: 535px) {
-  h3{
+  h3 {
     padding-top: 2.618em;
     padding-bottom: 2.618em;
   }
 }
 
 @media screen and (min-width: 600px) {
-  h1{
-    font-size:  3.375em;
+  h1 {
+    font-size: 3.375em;
     padding-top: 1.5em;
   }
-  h2{
+  h2 {
     padding-top: 1em;
     padding-left: 2.118em;  /* halfway between 1.618 and 2.618 */
   }
-  h4{
+  h4 {
     padding-left: 1.118em;
   }
-  h5{
+  h5 {
     text-align: left;
     padding-left: 23.608%;
     font-size: 150%;
     line-height: 1em;
     font-size: 1.5em;
   }
-  nav{
+  nav {
     padding-top: 0.618em;
     font-size: 1.618em;
   }
-  p{
+  p {
     padding-left: 2.118em;
     padding-right: 2.118em;
   }
-  article ul li{
+  article ul li {
     padding-left: 1em;
   }
-  article ul li a{
+  article ul li a {
     font-weight: normal;
     color: #FF9900;
   }
   /*
     Layout Styles (usually ID selector)
   */
-  #why{           /* CONTAINER */
+  #why {           /* CONTAINER */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto 1.618em auto auto 1.618em auto auto;
@@ -268,134 +258,134 @@ img{
       "r3c1 r3c1 r3c2"
       "r3c1 r3c1 ."
       ". title3 title3"
-      "r4c1 r4c2 r4c2"
+      "r4c1 r4c2 r4c2";
   }
-  #why-introduction{
+  #why-introduction {
     grid-area: header;
   }
-  #why-introduction p{
+  #why-introduction p {
     padding-left: 3.375em;
     padding-right: 3.375em;
   }
 
-  #leadership{
+  #leadership {
     grid-area: r2c2;
   }
-  #subheading-leadership{
+  #subheading-leadership {
     grid-area: title1;
     background-size: 10%;
     background-position: 2.118em bottom;
   }
-  #optional-imagery-for-leadership{
+  #optional-imagery-for-leadership {
     grid-area: r2c1;
     align-self: stretch;
-    background-image: url('images/excelon-green-line.jpg');
+    background-image: url("images/excelon-green-line.jpg");
     background-size: cover;
     background-position: center;
   }
 
-  #integrity{
+  #integrity {
     grid-area: r3c1;
   }
-  #subheading-integrity{
+  #subheading-integrity {
     grid-area: title2;
     background-size: 9%;
     background-position: 2.118em bottom;
   }
-  #optional-imagery-for-integrity{
+  #optional-imagery-for-integrity {
     grid-area: r3c2;
     align-self: stretch;
-    background-image: url('images/mtcc-exterior-west.jpg');
+    background-image: url("images/mtcc-exterior-west.jpg");
     background-size: cover;
     background-position: right;
   }
 
-  #social-responsibility{
+  #social-responsibility {
     grid-area: r4c2;
   }
-  #subheading-social-resp{
+  #subheading-social-resp {
     grid-area: title3;
     background-size: 10%;
     background-position: 2.118em bottom;
   }
-  #optional-imagery-for-social-resp{
+  #optional-imagery-for-social-resp {
     grid-area: r4c1;
     align-self: stretch;
-    background-image: url('images/msv-exterior-ethan-castro.jpg');
+    background-image: url("images/msv-exterior-ethan-castro.jpg");
     background-size: cover;
     background-position: center;
   }
 }
 
 @media screen and (min-width: 704px) {
-  h1{
-    font-size:  3.375em;
+  h1 {
+    font-size: 3.375em;
     padding-top: 2.8125em;  /* halfway between 2.25 and 3.375 */
   }
-  h3{
+  h3 {
     padding-top: 3.375em;
     padding-bottom: 3.375em;
   }
-  h5{
+  h5 {
     padding-top: 9%;
     padding-left: 19.0995%;
   }
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 900px) {
   /* default stuff... like for normal screen sizes */
-  html{
+  html {
     line-height: 1.618em;
   }
-  h1{
+  h1 {
     padding-top: 2.118em;   /* half-way between 4.236 and 2.118 */
     font-size: 4.236em;
   }
-  h2,nav{
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  h2, nav {
+    font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   }
-  h2{
+  h2 {
     font-weight: 300;
     font-size: 1.618em;
     padding-top: 0.618em;
     padding-left: 1.618em;  /* How can I align this with h1? */
     padding-right: 1.618em;
   }
-  h3,h4{
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  h3, h4 {
+    font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     padding-left: 0.618em;  /* Why isn't this alighned with h1? */
     padding-right: 0.618em;
   }
-  h3{
+  h3 {
     padding-top: 2.618em;   /* 1.618/2 = 0.809*/
     padding-bottom: 2.618em;
     text-align: center;
     font-size: 1.618em;
     line-height: 1em;
   }
-  h4{
+  h4 {
     padding-top: 0.5em;   /* 1em/2 = 0.5em */
-    font-family: "Helvetica", sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 4.236em;
     line-height: 1em;
     color: #CC0000;
   }
-  h5{
+  h5 {
     font-size: 1.618em;
     line-height: 1.618em;
     padding-top: 5%;
   }
-  p{
+  p {
     padding-left: 2.618em;
     padding-right: 2.618em;
   }
-  article ul li{
+  article ul li {
     padding-left: 1.618em;
   }
   /*
     Responsive image design
   */
-  img{
+  img {
     display: block;
     margin-left: none;
     margin-right: none;
@@ -405,16 +395,12 @@ img{
   /*
     Layout Styles (usually ID selector)
   */
-  #tagline{}
-  #who{
+  #who {
     background-size: 100%;
   }
-  #why{}
-  #how{
+  #how {
     background-size: 100%;
   }
-  #contact{}
-  #footer{}
   /*
     Module Styles (usually class selectors)
   */
@@ -423,21 +409,21 @@ img{
     State Styles (media queries and javascript dependent stuff
   */
 }
-@media screen and (min-width: 1000px){
-  h3{
+@media screen and (min-width: 1000px) {
+  h3 {
     padding-top: 2.618em;
   }
-  h5{
+  h5 {
     padding-top: 6%;
   }
 }
-@media screen and (min-width: 1100px){
-  h5{
+@media screen and (min-width: 1100px) {
+  h5 {
     padding-left: 16.591%;
   }
 }
-@media screen and (min-width: 1200px){
-  h5{
+@media screen and (min-width: 1200px) {
+  h5 {
     padding-top: 7%;
   }
 }
