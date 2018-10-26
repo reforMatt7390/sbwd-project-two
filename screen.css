@@ -208,82 +208,101 @@ img{
 
 
 @media screen and (min-width: 600px) {
-  h1{
-    font-size:  3.375em;
-    padding-top: 1.5em;
-  }
-  h2{
-    padding-top: 1em;
-    padding-left: 2.118em;  /* halfway between 1.618 and 2.618 */
-  }
-  /*
-    Layout Styles (usually ID selector)
-  */
-#why{           /* CONTAINER */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header header header"
-    "r2c1 r2c2 r2c2"
-    "r3c1 r3c1 r3c2"
-    "r4c1 r4c2 r4c2"
-}
-#why-introduction{
-  grid-area: header;
-}
-#social-responsibility{
-  grid-area: r2c2;
-}
-#optional-imagery-for-social-resp{
-  grid-area: r2c1;
-  align-self: stretch;
-  background-image: url('images/msv-exterior-ethan-castro.jpg');
-  background-size: cover;
-  background-position: center;
-}
-#optional-imagery-for-leadership{
-  grid-area: r3c2;
-  align-self: stretch;
-  background-image: url('images/excelon-green-line.jpg');
-  background-size: cover;
-  background-position: center;
-}
-#optional-imagery-for-integrity{
-  grid-area: r4c1;
-  align-self: stretch;
-  background-image: url('images/mtcc-exterior-west.jpg');
-  background-size: cover;
-  background-position: right;
-}
-/*img{
-  display:block;
-  height:auto;
-  min-height:100%;
-  left:50%;
-  position:absolute;
-  top:50%;
-  transform:translate(-50%,-50%);
-  width:auto;
-  min-width:100%;
-}*/
-#leadership{
-  grid-area: r3c1;
-}
-#integrity{
-  grid-area: r4c2;
-}
+      h1{
+        font-size:  3.375em;
+        padding-top: 1.5em;
+      }
+      h2{
+        padding-top: 1em;
+        padding-left: 2.118em;  /* halfway between 1.618 and 2.618 */
+      }
+      h5{
+        text-align: left;
+        //padding-right: 11.089em;
+        padding-left: 3.375em;
+        padding-top: 1em;
+        line-height: 1em;
+        font-size: 1.5em;
+      }
+      /*
+        Layout Styles (usually ID selector)
+      */
+      #why{           /* CONTAINER */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto 1.618em auto auto 1.618em auto auto;
+        grid-template-areas:
+          "header header header"
+          ". title1 title1"
+          "r2c1 r2c2 r2c2"
+          ". r2c2 r2c2"
+          "title2 title2 ."
+          "r3c1 r3c1 r3c2"
+          "r3c1 r3c1 ."
+          ". title3 title3"
+          "r4c1 r4c2 r4c2"
+      }
+      #why-introduction{
+        grid-area: header;
+      }
+      #why-introduction p{
+        padding-left: 3.375em;
+        padding-right: 3.375em;
+      }
 
-  #social-responsibility > figure{
-    /* Resize the section figures */
-    /*padding-top: 1em;
-    display: block;
-    margin-left: 1em;
-    margin-right: auto;
-    max-width: 4.236em;
-    align-items: center;*/
-  }
+      #leadership{
+        grid-area: r2c2;
+      }
+      #subheading-leadership{
+        grid-area: title1;
+        background-image: url('images/lightbulb.png');
+        background-position: 1.618em bottom;
+        background-size: 10%;
+        background-repeat: no-repeat;
+      }
+      #optional-imagery-for-leadership{
+        grid-area: r2c1;
+        align-self: stretch;
+        background-image: url('images/excelon-green-line.jpg');
+        background-size: cover;
+        background-position: center;
+      }
 
+      #integrity{
+        grid-area: r3c1;
+      }
+      #subheading-integrity{
+        grid-area: title2;
+        background-image: url('images/shield.png');
+        background-position: 1.618em;
+        background-size: 9%;
+        background-repeat: no-repeat;
+      }
+      #optional-imagery-for-integrity{
+        grid-area: r3c2;
+        align-self: stretch;
+        background-image: url('images/mtcc-exterior-west.jpg');
+        background-size: cover;
+        background-position: right;
+      }
+
+      #social-responsibility{
+        grid-area: r4c2;
+      }
+      #subheading-social-resp{
+        grid-area: title3;
+        background-image: url('images/heart.png');
+        background-position: 1.618em bottom;
+        background-size: 10%;
+        background-repeat: no-repeat;
+      }
+      #optional-imagery-for-social-resp{
+        grid-area: r4c1;
+        align-self: stretch;
+        background-image: url('images/msv-exterior-ethan-castro.jpg');
+        background-size: cover;
+        background-position: center;
+      }
 }
 
 
