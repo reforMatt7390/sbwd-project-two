@@ -85,7 +85,6 @@ nav{
   display: flex;
   text-align: center;
 }
-
 h3,h4{
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
@@ -107,11 +106,13 @@ h4{
 }
 h5{
   color: #FF9900;
-  padding-left: 4.236em;
-  padding-top: 1em;*/
+  padding-left: 23.608%;
+  padding-top: 9%;
+  font-size: 150%;
 }
 nav ul li a{
   color: #3C3D3E;
+  font-weight: bold;
 }
 ul li a{
   color: #CC0000;
@@ -165,13 +166,6 @@ img{
   background-size: 13%;
   background-repeat: no-repeat;
 }
-/*
-#social-responsibility{
-  background: no-repeat center/25% url("images/heart.png");
-  background-position: top;
-}
-*/
-
 #how{
 }
 #contact{
@@ -212,7 +206,11 @@ img{
   h2{
     padding-top: 1.5em;
   }
+  h5{
+    padding-left: 19.0995%;
+  }
 }
+
 @media screen and (min-width: 535px) {
   h3{
     padding-top: 2.618em;
@@ -220,123 +218,114 @@ img{
   }
 }
 
-
-
-
-
-
-
 @media screen and (min-width: 600px) {
-      h1{
-        font-size:  3.375em;
-        padding-top: 1.5em;
-      }
-      h2{
-        padding-top: 1em;
-        padding-left: 2.118em;  /* halfway between 1.618 and 2.618 */
-      }
-      h4{
-        padding-left: 1.118em;
-      }
-      h5{
-        text-align: left;
-        padding-left: 3.375em;
-        padding-top: 1em;
-        line-height: 1em;
-        font-size: 1.5em;
-      }
-      p{
-        padding-left: 2.118em;
-        padding-right: 2.118em;
-      }
-      article ul li{
-        padding-left: 1em;
-      }
-      ul li a{
-        font-weight: normal;
-        color: #FF9900;
-      }
-      /*
-        Layout Styles (usually ID selector)
-      */
-      #why{           /* CONTAINER */
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto 1.618em auto auto 1.618em auto auto;
-        grid-template-areas:
-          "header header header"
-          ". title1 title1"
-          "r2c1 r2c2 r2c2"
-          ". r2c2 r2c2"
-          "title2 title2 ."
-          "r3c1 r3c1 r3c2"
-          "r3c1 r3c1 ."
-          ". title3 title3"
-          "r4c1 r4c2 r4c2"
-      }
-      #why-introduction{
-        grid-area: header;
-      }
-      #why-introduction p{
-        padding-left: 3.375em;
-        padding-right: 3.375em;
-      }
+  h1{
+    font-size:  3.375em;
+    padding-top: 1.5em;
+  }
+  h2{
+    padding-top: 1em;
+    padding-left: 2.118em;  /* halfway between 1.618 and 2.618 */
+  }
+  h4{
+    padding-left: 1.118em;
+  }
+  h5{
+    text-align: left;
+    padding-left: 23.608%;
+    font-size: 150%;
+    line-height: 1em;
+    font-size: 1.5em;
+  }
+  nav{
+    padding-top: 0.618em;
+    font-size: 1.618em;
+  }
+  p{
+    padding-left: 2.118em;
+    padding-right: 2.118em;
+  }
+  article ul li{
+    padding-left: 1em;
+  }
+  article ul li a{
+    font-weight: normal;
+    color: #FF9900;
+  }
+  /*
+    Layout Styles (usually ID selector)
+  */
+  #why{           /* CONTAINER */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto 1.618em auto auto 1.618em auto auto;
+    grid-template-areas:
+      "header header header"
+      ". title1 title1"
+      "r2c1 r2c2 r2c2"
+      ". r2c2 r2c2"
+      "title2 title2 ."
+      "r3c1 r3c1 r3c2"
+      "r3c1 r3c1 ."
+      ". title3 title3"
+      "r4c1 r4c2 r4c2"
+  }
+  #why-introduction{
+    grid-area: header;
+  }
+  #why-introduction p{
+    padding-left: 3.375em;
+    padding-right: 3.375em;
+  }
 
-      #leadership{
-        grid-area: r2c2;
-      }
-      #subheading-leadership{
-        grid-area: title1;
-        background-size: 10%;
-        background-position: 2.118em bottom;
-      }
-      #optional-imagery-for-leadership{
-        grid-area: r2c1;
-        align-self: stretch;
-        background-image: url('images/excelon-green-line.jpg');
-        background-size: cover;
-        background-position: center;
-      }
+  #leadership{
+    grid-area: r2c2;
+  }
+  #subheading-leadership{
+    grid-area: title1;
+    background-size: 10%;
+    background-position: 2.118em bottom;
+  }
+  #optional-imagery-for-leadership{
+    grid-area: r2c1;
+    align-self: stretch;
+    background-image: url('images/excelon-green-line.jpg');
+    background-size: cover;
+    background-position: center;
+  }
 
-      #integrity{
-        grid-area: r3c1;
-      }
-      #subheading-integrity{
-        grid-area: title2;
-        background-size: 9%;
-        background-position: 2.118em bottom;
-      }
-      #optional-imagery-for-integrity{
-        grid-area: r3c2;
-        align-self: stretch;
-        background-image: url('images/mtcc-exterior-west.jpg');
-        background-size: cover;
-        background-position: right;
-      }
+  #integrity{
+    grid-area: r3c1;
+  }
+  #subheading-integrity{
+    grid-area: title2;
+    background-size: 9%;
+    background-position: 2.118em bottom;
+  }
+  #optional-imagery-for-integrity{
+    grid-area: r3c2;
+    align-self: stretch;
+    background-image: url('images/mtcc-exterior-west.jpg');
+    background-size: cover;
+    background-position: right;
+  }
 
-      #social-responsibility{
-        grid-area: r4c2;
-      }
-      #subheading-social-resp{
-        grid-area: title3;
-        background-size: 10%;
-        background-position: 2.118em bottom;
-      }
-      #optional-imagery-for-social-resp{
-        grid-area: r4c1;
-        align-self: stretch;
-        background-image: url('images/msv-exterior-ethan-castro.jpg');
-        background-size: cover;
-        background-position: center;
-      }
+  #social-responsibility{
+    grid-area: r4c2;
+  }
+  #subheading-social-resp{
+    grid-area: title3;
+    background-size: 10%;
+    background-position: 2.118em bottom;
+  }
+  #optional-imagery-for-social-resp{
+    grid-area: r4c1;
+    align-self: stretch;
+    background-image: url('images/msv-exterior-ethan-castro.jpg');
+    background-size: cover;
+    background-position: center;
+  }
 }
-
-
-
-
-
-
-
 
 @media screen and (min-width: 704px) {
   h1{
@@ -347,91 +336,108 @@ img{
     padding-top: 3.375em;
     padding-bottom: 3.375em;
   }
-@media screen and (min-width: 900px) {
-  /* default stuff... like for normal screen sizes */
-        html{
-          line-height: 1.618em;
-        }
-        h1{
-          padding-top: 2.118em;   /* half-way between 4.236 and 2.118 */
-          font-size: 4.236em;
-        }
-        h2,nav{
-          font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-        }
-        h2{
-          font-weight: 300;
-          font-size: 1.618em;
-          padding-top: 0.618em;
-          padding-left: 1.618em;  /* How can I align this with h1? */
-          padding-right: 1.618em;
-        }
-        nav{
-          padding-top: 0.618em;
-          font-size: 1.618em;
-        }
-        h3,h4{
-          font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-          padding-left: 0.618em;  /* Why isn't this alighned with h1? */
-          padding-right: 0.618em;
-        }
-        h3{
-          padding-top: 2.618em;   /* 1.618/2 = 0.809*/
-          padding-bottom: 2.618em;
-          text-align: center;
-          font-size: 1.618em;
-          line-height: 1em;
-        }
-        h4{
-          padding-top: 0.5em;   /* 1em/2 = 0.5em */
-          font-family: "Helvetica", sans-serif;
-          font-size: 4.236em;
-          line-height: 1em;
-          color: #CC0000;
-        }
-        h5{
-          font-size: 1.618em;
-          line-height: 1.618em;
-          padding-left: 1.618em;
-        }
-        p,ul{
-          padding-left: 2.618em;
-          padding-right: 2.618em;
-        }
-        /*
-          Responsive image design
-        */
-        img{
-          display: block;
-          margin-left: none;
-          margin-right: none;
-          max-width: 100%;
-        }
-
-        /*
-          Layout Styles (usually ID selector)
-        */
-        #tagline{}
-        #who{
-          background-size: 100%;
-        }
-        #why{}
-        #how{
-          background-size: 100%;
-        }
-        #contact{}
-        #footer{}
-
-        /*
-          Module Styles (usually class selectors)
-        */
-
-
-        /*
-          State Styles (media queries and javascript dependent stuff
-        */
+  h5{
+    padding-top: 9%;
+    padding-left: 19.0995%;
+  }
 }
-@media screen and (min-width: 1000px) {
+
+@media screen and (min-width: 900px){
+  /* default stuff... like for normal screen sizes */
+  html{
+    line-height: 1.618em;
+  }
+  h1{
+    padding-top: 2.118em;   /* half-way between 4.236 and 2.118 */
+    font-size: 4.236em;
+  }
+  h2,nav{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
+  h2{
+    font-weight: 300;
+    font-size: 1.618em;
+    padding-top: 0.618em;
+    padding-left: 1.618em;  /* How can I align this with h1? */
+    padding-right: 1.618em;
+  }
+  h3,h4{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    padding-left: 0.618em;  /* Why isn't this alighned with h1? */
+    padding-right: 0.618em;
+  }
+  h3{
+    padding-top: 2.618em;   /* 1.618/2 = 0.809*/
+    padding-bottom: 2.618em;
+    text-align: center;
+    font-size: 1.618em;
+    line-height: 1em;
+  }
+  h4{
+    padding-top: 0.5em;   /* 1em/2 = 0.5em */
+    font-family: "Helvetica", sans-serif;
+    font-size: 4.236em;
+    line-height: 1em;
+    color: #CC0000;
+  }
+  h5{
+    font-size: 1.618em;
+    line-height: 1.618em;
+    padding-top: 5%;
+  }
+  p{
+    padding-left: 2.618em;
+    padding-right: 2.618em;
+  }
+  article ul li{
+    padding-left: 1.618em;
+  }
+  /*
+    Responsive image design
+  */
+  img{
+    display: block;
+    margin-left: none;
+    margin-right: none;
+    max-width: 100%;
+  }
+
+  /*
+    Layout Styles (usually ID selector)
+  */
+  #tagline{}
+  #who{
+    background-size: 100%;
+  }
+  #why{}
+  #how{
+    background-size: 100%;
+  }
+  #contact{}
+  #footer{}
+  /*
+    Module Styles (usually class selectors)
+  */
+
+  /*
+    State Styles (media queries and javascript dependent stuff
+  */
+}
+@media screen and (min-width: 1000px){
   h3{
     padding-top: 2.618em;
   }
+  h5{
+    padding-top: 6%;
+  }
+}
+@media screen and (min-width: 1100px){
+  h5{
+    padding-left: 16.591%;
+  }
+}
+@media screen and (min-width: 1200px){
+  h5{
+    padding-top: 7%;
+  }
+}
