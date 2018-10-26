@@ -107,13 +107,15 @@ h4{
 }
 h5{
   color: #FF9900;
-  /* padding-top: 4.236em;*/
+  padding-left: 4.236em;
+  padding-top: 1em;*/
 }
 nav ul li a{
   color: #3C3D3E;
 }
 ul li a{
   color: #CC0000;
+  font-weight: bold;
 }
 li{
   padding-bottom: 1em;
@@ -145,7 +147,24 @@ img{
 }
 #why{
 }
-
+#subheading-leadership{
+  background-image: url('images/lightbulb.png');
+  background-position: 1.618em bottom;
+  background-size: 11%;
+  background-repeat: no-repeat;
+}
+#subheading-integrity{
+  background-image: url('images/shield.png');
+  background-position: 1.618em;
+  background-size: 10%;
+  background-repeat: no-repeat;
+}
+#subheading-social-resp{
+  background-image: url('images/heart.png');
+  background-position: 1.618em bottom;
+  background-size: 13%;
+  background-repeat: no-repeat;
+}
 /*
 #social-responsibility{
   background: no-repeat center/25% url("images/heart.png");
@@ -216,13 +235,26 @@ img{
         padding-top: 1em;
         padding-left: 2.118em;  /* halfway between 1.618 and 2.618 */
       }
+      h4{
+        padding-left: 1.118em;
+      }
       h5{
         text-align: left;
-        //padding-right: 11.089em;
         padding-left: 3.375em;
         padding-top: 1em;
         line-height: 1em;
         font-size: 1.5em;
+      }
+      p{
+        padding-left: 2.118em;
+        padding-right: 2.118em;
+      }
+      article ul li{
+        padding-left: 1em;
+      }
+      ul li a{
+        font-weight: normal;
+        color: #FF9900;
       }
       /*
         Layout Styles (usually ID selector)
@@ -255,10 +287,8 @@ img{
       }
       #subheading-leadership{
         grid-area: title1;
-        background-image: url('images/lightbulb.png');
-        background-position: 1.618em bottom;
         background-size: 10%;
-        background-repeat: no-repeat;
+        background-position: 2.118em bottom;
       }
       #optional-imagery-for-leadership{
         grid-area: r2c1;
@@ -273,10 +303,8 @@ img{
       }
       #subheading-integrity{
         grid-area: title2;
-        background-image: url('images/shield.png');
-        background-position: 1.618em;
         background-size: 9%;
-        background-repeat: no-repeat;
+        background-position: 2.118em bottom;
       }
       #optional-imagery-for-integrity{
         grid-area: r3c2;
@@ -291,10 +319,8 @@ img{
       }
       #subheading-social-resp{
         grid-area: title3;
-        background-image: url('images/heart.png');
-        background-position: 1.618em bottom;
         background-size: 10%;
-        background-repeat: no-repeat;
+        background-position: 2.118em bottom;
       }
       #optional-imagery-for-social-resp{
         grid-area: r4c1;
