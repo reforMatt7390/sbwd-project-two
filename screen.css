@@ -116,7 +116,7 @@ nav ul li a {
   font-weight: bold;
 }
 ul li a {
-  color: #CC0000;
+  color: #FF9900;
   font-weight: bold;
 }
 li {
@@ -211,7 +211,7 @@ img {
 @media screen and (min-width: 600px) {
   h1 {
     font-size: 3.375em;
-    padding-top: 1.5em;
+    padding-top: 1em;
   }
   h2 {
     padding-top: 1em;
